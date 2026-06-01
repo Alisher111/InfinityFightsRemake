@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INFINITY FIGHTS | Questionary</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="form.js" defer></script>
+</head>
+
+<body>
+
+<header>
+  <nav id="nav_menu">
+    <ul>
+      <li><a href="index.html">Homepage</a></li>
+
+      <li>
+        <a href="#">Welcome</a>
+        <ul>
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="rules.html">Rules</a></li>
+          <li><a href="lastshows.html">Last Shows</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#">Battles</a>
+        <ul>
+          <li><a href="listoffights.html">List of fights</a></li>
+          <li><a href="listofprofs.html">List of profiles</a></li>
+          <li><a href="formulas.html">Formulas</a></li>
+          <li><a href="simshows.html">Similar shows</a></li>
+        </ul>
+      </li>
+
+      <li><a href="FAQ.html">FAQ</a></li>
+
+      <li>
+        <a href="aboutus.html">About Us</a>
+        <ul>
+          <li><a href="question.html">Question Form</a></li>
+          <li><a href="question.html">Contacts</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <img src="css/emem.avif" class="img_header" alt="Infinity Fights Banner">
+</header>
+
+<main>
+
+  <section class="intro">
+    <p>
+      Love polls? Want epic battles of characters from different universes?
+      Join INFINITY FIGHTS and vote for the strongest hero!
+    </p>
+  </section>
+
+  <section class="questionary">
+
+    <h1 class="name-content">Questionary</h1>
+
+    <p class="intro">
+      If you didn’t find your answer in FAQ, fill out the form below.
+    </p>
+
+    <h2 class="name-content">Ask your question here</h2>
+
+    <form class="contact-form" onsubmit="validateForm(); return false;">
+
+      <div class="form-field">
+        <label>Name</label>
+        <input type="text" name="name">
+      </div>
+
+      <div class="form-field">
+        <label>Surname</label>
+        <input type="text" name="lastname">
+      </div>
+
+      <div class="form-field">
+        <label>Telephone</label>
+        <input type="text" name="phone">
+      </div>
+
+      <div class="form-field">
+        <label>Email</label>
+        <input type="email" name="email">
+      </div>
+
+      <div class="form-field">
+        <label>Your question</label>
+        <textarea name="comments"></textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+
+    </form>
+
+  </section>
+
+</main>
+
+<footer>
+  <div id="demo-nav">
+    <ul>
+      <li><a href="index.html">Homepage</a></li>
+      <li><a href="rules.html">Rules</a></li>
+      <li><a href="FAQ.html">FAQ</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+    </ul>
+  </div>
+
+  <p>Copyright 2026 © INFINITY FIGHTS</p>
+</footer>
+
+</body>
+</html>

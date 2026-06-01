@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg: #938f8f;
+  --bg2: #141414;
+  --text: #ffffff;
+  --main: #ffc800;
+  --muted: rgba(255,255,255,0.7);
+  --radius: 14px;
+  --transition: 0.25s ease;
+}
+
+/* ================= RESET ================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* ================= NAV ================= */
+
+#nav_menu {
+  background: rgba(0,0,0,0.95);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#nav_menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  margin: 0;
+}
+
+#nav_menu li {
+  position: relative;
+}
+
+#nav_menu a {
+  color: var(--text);
+  text-decoration: none;
+  padding: 10px 14px;
+  display: block;
+  transition: var(--transition);
+}
+
+#nav_menu a:hover {
+  color: var(--main);
+}
+
+/* dropdown */
+#nav_menu ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background: #2a2a2a;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+
+  transition: var(--transition);
+  border-radius: 10px;
+  padding: 6px 0;
+}
+
+#nav_menu li:hover > ul,
+#nav_menu li:focus-within > ul {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* ================= HEADER IMAGE ================= */
+
+.img_header {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ================= INTRO ================= */
+
+.intro {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 15px;
+  text-align: center;
+}
+
+/* ================= TITLES ================= */
+
+.name-content {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* ================= IMAGE SYSTEM ================= */
+
+/* unified image style */
+.img,
+.fig,
+.vstextfig,
+.imgmainart {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* size control */
+.fig {
+  max-width: 500px;
+  margin: 10px auto;
+}
+
+.vstextfig {
+  max-width: 250px;
+  margin: 10px auto;
+}
+
+/* ================= VIDEO CARDS ================= */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.video-card {
+  background: var(--bg2);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+/* RESPONSIVE VIDEO */
+.video-card iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  display: block;
+}
+
+/* TEXT AREA */
+.video-card h3 {
+  padding: 10px;
+  text-align: center;
+}
+
+.video-card p {
+  padding: 0 10px;
+  text-align: center;
+  color: var(--muted);
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  z-index: 2;
+}
+
+.video-preview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 3;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.video-wrapper:hover .video-preview {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* LIST INSIDE CARD */
+.video-card ul {
+  padding: 10px 25px 15px;
+}
+
+.video-card li {
+  margin: 5px 0;
+}
+
+.video-card a {
+color: #ffffff;
+}
+
+/* HOVER EFFECT */
+.video-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* ================= LINKS ================= */
+
+.vstext a {
+  color: aqua;
+  text-decoration: none;
+  font: 1em Fantasy;
+  -webkit-text-stroke: 1px #000;
+}
+
+.vstext a:hover {
+  text-decoration: underline;
+}
+
+/* ================= TABLES ================= */
+
+.vstext {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.battle-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* battle cards */
+.battle-card {
+  background: var(--bg2);
+  border-radius: var(--radius);
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--text);
+  transition: var(--transition);
+}
+
+.battle-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+/* hover effect */
+.battle-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.battle-card:hover img {
+  transform: scale(1.05);
+}
+
+/* ================= PROFILES GRID ================= */
+
+.profiles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.profile-card {
+  background: var(--bg2);
+  border-radius: var(--radius);
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--text);
+  transition: var(--transition);
+}
+
+.profile-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: scale(1.05);
+}
+
+/* ================= FAQ ================= */
+
+.faq-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ================= FORM ================= */
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: var(--bg2);
+  border-radius: var(--radius);
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-field input,
+.form-field textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: var(--main);
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+  background: var(--bg2);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+#demo-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+}
+
+#demo-nav a {
+  color: var(--text);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+#demo-nav a:hover {
+  color: var(--main);
+}
