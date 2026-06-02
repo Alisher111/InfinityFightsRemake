@@ -322,6 +322,17 @@ color: #ffffff;
   padding: 20px;
 }
 
+/* ================= RULES ================= */ 
+.rules-section h2 { 
+  text-align: center; padding-top: 1rem; 
+} 
+.rules-section ul { 
+  margin: 1em 0; padding-left: 40px; list-style: disc; 
+} 
+.rules-section li { 
+  margin: 0.4em 0; 
+}
+
 /* ================= FORM ================= */
 
 .contact-form {
