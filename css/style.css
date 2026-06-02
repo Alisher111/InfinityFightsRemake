@@ -116,7 +116,7 @@ body {
 .vstextfig,
 .imgmainart {
   display: block;
-  width: 100%;
+  width max: 500px;
   height: auto;
   border-radius: 10px;
   object-fit: cover;
