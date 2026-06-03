@@ -4,7 +4,7 @@
   --bg: #938f8f;
   --bg2: #141414;
   --text: #ffffff;
-  --main: #ffc800;
+  --main: #ff9500;
   --muted: rgba(255,255,255,0.7);
   --radius: 14px;
   --transition: 0.25s ease;
@@ -110,27 +110,50 @@ body {
 
 /* ================= IMAGE SYSTEM ================= */
 
-/* unified image style */
-.img,
-.fig,
-.vstextfig,
-.imgmainart {
+.img-base {
   display: block;
-  width max: 500px;
+  width: 100%;
   height: auto;
   border-radius: 10px;
   object-fit: cover;
 }
 
-/* size control */
-.fig {
-  max-width: 500px;
-  margin: 10px auto;
+.img-hero {
+  display: block;
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+  margin: 20px auto;
 }
 
-.vstextfig {
-  max-width: 250px;
-  margin: 10px auto;
+.img-article {
+  display: block;
+  width: 70%;
+  margin: 20px auto;
+  border-radius: 12px;
+  object-fit: cover;
+  opacity: 0.95;
+}
+
+.img-fig {
+  display: block;
+  width: 300px;
+  max-width: 100%;
+  margin: 15px auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.img-vs {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 /* ================= VIDEO CARDS ================= */
@@ -228,14 +251,24 @@ color: #ffffff;
 /* ================= LINKS ================= */
 
 .vstext a {
-  color: aqua;
+  color: #ff9500;
   text-decoration: none;
-  font: 1em Fantasy;
+  font: 1.1em fantasy;
   -webkit-text-stroke: 1px #000;
+  padding: 6px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.25);
+  transition: var(--transition);
+  display: inline-block;
 }
 
 .vstext a:hover {
-  text-decoration: underline;
+  color: #ff9500;
+  background: rgba(255, 149, 0, 0.15); 
+  border-color: #ff9500;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 0 12px rgba(255, 149, 0, 0.35); 
 }
 
 /* ================= TABLES ================= */
@@ -314,23 +347,63 @@ color: #ffffff;
   transform: scale(1.05);
 }
 
-/* ================= FAQ ================= */
 
+/* ================= FAQ & RULES ================= */
 .faq-section {
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* ================= RULES ================= */ 
-.rules-section h2 { 
-  text-align: center; padding-top: 1rem; 
-} 
-.rules-section ul { 
-  margin: 1em 0; padding-left: 40px; list-style: disc; 
-} 
-.rules-section li { 
-  margin: 0.4em 0; 
+.faq-section h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faq-block {
+  background: var(--bg2);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+.faq-block:hover {
+  transform: translateY(-3px);
+}
+
+.faq-block h3 {
+  color: var(--main);
+  margin-bottom: 10px;
+}
+
+.faq-block p {
+  margin-bottom: 10px;
+  color: var(--muted);
+}
+
+.faq-block ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.faq-block li {
+  margin: 6px 0;
+  color: var(--muted);
+}
+
+.faq-section p {
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.faq-section img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 1rem;
 }
 
 /* ================= FORM ================= */
