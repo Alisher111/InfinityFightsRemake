@@ -25,7 +25,7 @@
       </li>
 
       <li>
-        <a>Battles</a>
+        <a href="#">Battles</a>
         <ul>
           <li><a href="listoffights.html">List of fights</a></li>
           <li><a href="listofprofs.html">List of profiles</a></li>
@@ -44,42 +44,52 @@
 <main>
 
   <section class="intro">
-    <p>
-      Love polls? Vote for strongest hero in epic battles.
-    </p>
+    <p>Love polls? Vote for strongest hero in epic battles.</p>
   </section>
 
-  <h2 class="page-title">Black Noir vs Deadpool</h2>
+  <h2 class="name-content">Black Noir VS Deadpool </h2>
 
-  <img src="css/BNvsDP1.jpg" class="battle-img" alt="Black Noir vs Deadpool">
 
-  <div class="fighters">
-    <a href="profile_noir.html" class="fighter rz">Black Noir</a>
-    <a href="profile_deadpool.html" class="fighter ss">Deadpool</a>
+  <img src="css/BNvsDP1.jpg" class="img-vs" alt="Deadpool VS Black Noir">
+
+  <div class="vstext">
+    <a href="profile_noir.html">Black Noir</a>
+    <span>VS</span>
+    <a href="profile_deadpool.html">Deadpool</a>
   </div>
 
-  <h1 class="vote-title">Choose the winner!</h1>
+  <section class="faq-section">
 
-  <fieldset class="vote-box">
-    <legend>REGENARATORS FIGHT!</legend>
+    <div class="faq-block">
+      <h3>Choose the winner!</h3>
 
-      <div class="option">
-      <input type="radio" name="winner" id="rz" value="raizo">
-      <label for="rz">Black Noir</label>
+      <form>
+
+        <ul>
+          <li>
+            <label>
+              <input type="radio" name="winner" value="storm">
+              BLACK NOIR
+            </label>
+          </li>
+
+          <li>
+            <label>
+              <input type="radio" name="winner" value="raizo">
+              DEADPOOL
+            </label>
+          </li>
+        </ul>
+
+        <div class="faq-block">
+          <p>Comments:</p>
+          <textarea placeholder="Write your thoughts..."></textarea>
+        </div>
+
+      </form>
     </div>
-    <div class="option">
-      <input type="radio" name="winner" id="ss" value="storm">
-      <label for="ss">Deadpool</label>
-    </div>
 
-  
-
-    <div class="comment-box">
-      <label>Comments:</label>
-      <textarea placeholder="Write your thoughts..."></textarea>
-    </div>
-
-  </fieldset>
+  </section>
 
 </main>
 
