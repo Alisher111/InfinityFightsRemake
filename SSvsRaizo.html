@@ -44,41 +44,51 @@
 <main>
 
   <section class="intro">
-    <p>
-      Love polls? Vote for strongest hero in epic battles.
-    </p>
+    <p>Love polls? Vote for strongest hero in epic battles.</p>
   </section>
 
-  <h2 class="page-title">Storm Shadow VS Raizo</h2>
+  <h2 class="name-content">Storm Shadow VS Raizo</h2>
 
-  <img src="css/SSvsRaizo.jpg" class="battle-img" alt="Storm Shadow vs Raizo">
+  <img src="css/SSvsRaizo.jpg" class="img-vs" alt="Storm Shadow vs Raizo">
 
-  <div class="fighters">
-    <a href="profile_SS.html" class="fighter ss">Storm Shadow</a>
-    <a href="profile_Raizo.html" class="fighter rz">Raizo</a>
+  <div class="vstext">
+    <a href="profile_SS.html">Storm Shadow</a>
+    <span>VS</span>
+    <a href="profile_Raizo.html">Raizo</a>
   </div>
 
-  <h1 class="vote-title">Choose the winner!</h1>
+  <section class="faq-section">
 
-  <fieldset class="vote-box">
-    <legend>CLASH OF NINJAS!</legend>
+    <div class="faq-block">
+      <h3>Choose the winner!</h3>
 
-    <div class="option">
-      <input type="radio" name="winner" id="ss" value="storm">
-      <label for="ss">STORM SHADOW</label>
+      <form>
+
+        <ul>
+          <li>
+            <label>
+              <input type="radio" name="winner" value="storm">
+              STORM SHADOW
+            </label>
+          </li>
+
+          <li>
+            <label>
+              <input type="radio" name="winner" value="raizo">
+              RAIZO
+            </label>
+          </li>
+        </ul>
+
+        <div class="faq-block">
+          <p>Comments:</p>
+          <textarea placeholder="Write your thoughts..."></textarea>
+        </div>
+
+      </form>
     </div>
 
-    <div class="option">
-      <input type="radio" name="winner" id="rz" value="raizo">
-      <label for="rz">RAIZO</label>
-    </div>
-
-    <div class="comment-box">
-      <label>Comments:</label>
-      <textarea placeholder="Write your thoughts..."></textarea>
-    </div>
-
-  </fieldset>
+  </section>
 
 </main>
 
