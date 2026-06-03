@@ -25,7 +25,7 @@
       </li>
 
       <li>
-        <a>Battles</a>
+        <a href="#">Battles</a>
         <ul>
           <li><a href="listoffights.html">List of fights</a></li>
           <li><a href="listofprofs.html">List of profiles</a></li>
@@ -44,41 +44,52 @@
 <main>
 
   <section class="intro">
-    <p>
-      Love polls? Vote for strongest hero in epic battles.
-    </p>
+    <p>Love polls? Vote for strongest hero in epic battles.</p>
   </section>
 
-  <h2 class="page-title">Shredder VS Talon</h2>
+  <h2 class="name-content">Shredder VS Talon</h2>
 
-  <img src="css/SHvsTl1.jpg" class="battle-img" alt="Shredder VS Talon">
 
-  <div class="fighters">
-    <a href="profile_shredder.html" class="fighter ss">Moreau</a>
-    <a href="profile_talon.html" class="fighter rz">Zabuza</a>
+  <img src="css/SHvsTl1.jpg" class="img-vs" alt="Moreau vs Zabuza">
+
+  <div class="vstext">
+    <a href="profile_shredder.html">Shredder</a>
+    <span>VS</span>
+    <a href="profile_talon.html">Talon</a>
   </div>
 
-  <h1 class="vote-title">Choose the winner!</h1>
+  <section class="faq-section">
 
-  <fieldset class="vote-box">
-    <legend>BLADES AND CLAWS!</legend>
+    <div class="faq-block">
+      <h3>Choose the winner!</h3>
 
-    <div class="option">
-      <input type="radio" name="winner" id="ss" value="storm">
-      <label for="ss">Shredder</label>
+      <form>
+
+        <ul>
+          <li>
+            <label>
+              <input type="radio" name="winner" value="storm">
+              SHREDDER
+            </label>
+          </li>
+
+          <li>
+            <label>
+              <input type="radio" name="winner" value="raizo">
+              TALON
+            </label>
+          </li>
+        </ul>
+
+        <div class="faq-block">
+          <p>Comments:</p>
+          <textarea placeholder="Write your thoughts..."></textarea>
+        </div>
+
+      </form>
     </div>
 
-    <div class="option">
-      <input type="radio" name="winner" id="rz" value="raizo">
-      <label for="rz">Talon</label>
-    </div>
-
-    <div class="comment-box">
-      <label>Comments:</label>
-      <textarea placeholder="Write your thoughts..."></textarea>
-    </div>
-
-  </fieldset>
+  </section>
 
 </main>
 
