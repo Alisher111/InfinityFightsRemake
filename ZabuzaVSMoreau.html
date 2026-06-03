@@ -44,41 +44,52 @@
 <main>
 
   <section class="intro">
-    <p>
-      Love polls? Vote for strongest hero in epic battles.
-    </p>
+    <p>Love polls? Vote for strongest hero in epic battles.</p>
   </section>
 
-  <h2 class="page-title">Moreau VS Zabuza</h2>
+  <h2 class="name-content">Moreau vs Zabuza</h2>
 
-  <img src="css/MorvsZabuza.jpg" class="battle-img" alt="Moreau VS Zabuza">
 
-  <div class="fighters">
-    <a href="profile_moreau.html" class="fighter ss">Moreau</a>
-    <a href="profile_zabuza.html" class="fighter rz">Zabuza</a>
+  <img src="css/MorvsZabuza.jpg" class="img-vs" alt="Moreau vs Zabuza">
+
+  <div class="vstext">
+    <a href="profile_moreau.html">Moreau</a>
+    <span>VS</span>
+    <a href="profile_zabuza.html">Zabuza</a>
   </div>
 
-  <h1 class="vote-title">Choose the winner!</h1>
+  <section class="faq-section">
 
-  <fieldset class="vote-box">
-    <legend>Sword and club!</legend>
+    <div class="faq-block">
+      <h3>Choose the winner!</h3>
 
-    <div class="option">
-      <input type="radio" name="winner" id="ss" value="storm">
-      <label for="ss">Moreau</label>
+      <form>
+
+        <ul>
+          <li>
+            <label>
+              <input type="radio" name="winner" value="storm">
+              MOREAU
+            </label>
+          </li>
+
+          <li>
+            <label>
+              <input type="radio" name="winner" value="raizo">
+              ZABUZA
+            </label>
+          </li>
+        </ul>
+
+        <div class="faq-block">
+          <p>Comments:</p>
+          <textarea placeholder="Write your thoughts..."></textarea>
+        </div>
+
+      </form>
     </div>
 
-    <div class="option">
-      <input type="radio" name="winner" id="rz" value="raizo">
-      <label for="rz">Zabuza</label>
-    </div>
-
-    <div class="comment-box">
-      <label>Comments:</label>
-      <textarea placeholder="Write your thoughts..."></textarea>
-    </div>
-
-  </fieldset>
+  </section>
 
 </main>
 
